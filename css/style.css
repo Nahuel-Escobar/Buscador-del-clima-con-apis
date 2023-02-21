@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nunito+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(75, 75, 75, 0.862745098);
+}
+
+.grid-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  width: 100%;
+  background-color: #111111;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  padding: 10px;
+}
+header nav img {
+  width: 50px;
+}
+header nav ul {
+  list-style: none;
+  font-size: 1rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+header nav ul li a:hover {
+  color: cadetblue;
+}
+
+.titulo-content {
+  margin-top: 5%;
+}
+.titulo-content h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.weather-content {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 95%;
+  max-width: 501px;
+  text-align: center;
+  padding: 20px 20px 50px;
+  margin: 5% auto;
+  background-color: #546785;
+  border-radius: 5px;
+}
+.weather-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.weather-content p {
+  color: #cfcfd9;
+}
+.weather-content .result {
+  margin-bottom: 8%;
+}
+.weather-content .result p {
+  font-size: 0.8rem;
+  margin: 5px 0 5px;
+}
+.weather-content .result h2 {
+  font-size: 2.5rem;
+  margin: -10px 0 10px;
+  color: #fff;
+}
+.weather-content .result h5 {
+  font-size: 2rem;
+  margin: 10px;
+  color: #fff;
+}
+.weather-content form {
+  display: flex;
+  flex-direction: column;
+}
+.weather-content form input[type=text], .weather-content form input[type=submit], .weather-content form select {
+  width: 100%;
+  margin: 0px 0 25px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+.weather-content form input[type=submit] {
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: #14d4a5;
+  border: 1px solid #14d4a5;
+  color: #fff;
+  font-weight: 600;
+  transition: width 1s;
+}
+.weather-content form input[type=submit]:hover {
+  width: 80%;
+}
+
+.alert-message {
+  margin: 24px 0 0;
+  color: red !important;
+}
+
+footer {
+  background-color: #111111;
+  color: #fff;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+footer .copyright {
+  width: 100%;
+  height: 2rem;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer .copyright a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.85rem;
+}
+footer .links-content {
+  display: grid;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px auto;
+  grid-template-columns: 1fr 1fr;
+}
+footer .links-content .contacto-content {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+footer .links-content .contacto-content .titulo-box h3 {
+  color: #fff;
+  font-size: 1rem;
+}
+footer .links-content .contacto-content .icons-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+footer .links-content .contacto-content .icons-content a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .links-content .contacto-content .icons-content a i {
+  font-size: 1rem;
+}
+footer .links-content .contacto-content .icons-content a .fa-instagram {
+  color: #bd266c;
+}
+footer .links-content .contacto-content .icons-content a .fa-linkedin {
+  color: #2f77b1;
+}
+footer .links-content .contacto-content .icons-content a .fa-github {
+  color: #cccfd4;
+}
+footer .links-content .contacto-content .icons-content a .fa-whatsapp {
+  color: #36e954;
+}
+footer .links-content .proyectos-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer .links-content .proyectos-content .titulo-box h3 {
+  color: #fff;
+  font-size: 1rem;
+}
+footer .links-content .proyectos-content .links-box {
+  margin-top: 1%;
+}
+footer .links-content .proyectos-content .links-box a {
+  text-decoration: none;
+}
+footer .links-content .proyectos-content .links-box a p {
+  margin-top: 1.5%;
+  font-size: 0.75rem;
+  color: #cfcfd9;
+}
+
+/*# sourceMappingURL=style.css.map */

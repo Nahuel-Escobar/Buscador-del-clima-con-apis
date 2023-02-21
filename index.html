@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Clima Clima-Mañana Clima-Hoy Clima-El-Finde-Semana Clima-El-Finde Buscador-De-Clima">
+    <meta name="description" content="Sitio web donde sabras el clima en todo el mundo!!">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Buscador de clima</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <nav>
+                <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
+                <ul>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="titulo-content">
+                <h1>Bienvenido a mi buscador de clima en el mundo!</h1>
+            </section>
+            <section class="weather-content">
+                <h2>Buscador del clima</h2>
+                <div class="result">
+                    <p>Agregue ciudad y pais</p>
+                    <h5>Clima en Argentina</h5>
+        
+                    <h2>23°</h2>
+                    <p>Max: 28°</p>
+                    <p>Min: 20°</p>
+                </div>
+                <form action="" method="POST" class="get-weather">
+                    <input type="text" name="city" id="city" placeholder="ingrese su ciudad">
+        
+                    <select name="" id="country">
+                        <option value="" disabled selected> Selecciona tu pais</option>
+                        <option value="AR">Argentina</option>
+                        <option value="CO">Colombia</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="ES">España</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="MX">México</option>
+                        <option value="PE">Perú</option>
+                    </select>
+                    <input type="submit" name="" id="" value="Obtener clima">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="copyright">
+                <a href="#"><h4>©copyright 2023 todos los derechos reservados.</h4></a>
+            </div>
+            <div class="links-content">
+                <div class="contacto-content" id="contacto">
+                    <div class="titulo-box">
+                        <h3 id="contacto">Contactame</h3>
+                    </div>
+                    <div class="icons-content">
+                        <a href="https://www.instagram.com/_nahu_e/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/esteban-nahuel-escobar-704098253/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Nahuel-Escobar" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=541128650782" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="proyectos-content">
+                    <div class="titulo-box">
+                        <h3>Más proyectos</h3>
+                    </div>
+                    <div class="links-box">
+                        <a href="#"><p>Calculadora</p></a>
+                        <a href="#"><p>Tienda E-Commerce</p></a>
+                        <a href="#"><p>Adoptar perritos</p></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Scripts de Externos -->
+    <script src="https://kit.fontawesome.com/2c1892ead4.js" crossorigin="anonymous"></script>
+    <!-- Scripts Propios -->
+    <script src="js/main.js"></script>
+</body>
+</html>

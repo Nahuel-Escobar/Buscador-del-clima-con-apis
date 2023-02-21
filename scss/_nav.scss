@@ -1,0 +1,30 @@
+@use 'variables';
+
+header {
+    width: 100%;
+    background-color: variables.$backgroundDefault;
+    & nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8vh;
+        padding: 10px;
+        & img {
+            width: 50px;
+        }
+        
+        & ul {
+            list-style: none;
+            font-size: 1rem;
+
+            & li a{
+                text-decoration: none;
+                color: variables.$colorLetraP;
+                transition: all 0.3s ease;
+                &:hover{
+                    color: cadetblue;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+@use 'variables';
+
+
+.titulo-content {
+    margin-top: 5%;
+    & h1 {
+        text-align: center;
+        font-size: 1.4rem;
+        color: variables.$colorLetraP;
+    }
+
+}
+
+.weather-content {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 95%;
+    max-width: 501px;
+    text-align: center;
+    padding: 20px 20px 50px;
+    margin: 5% auto;
+    background-color: variables.$colorCaja;
+    border-radius: 5px;
+    & h2{
+       font-size: 2rem;
+       margin-bottom: 1rem;
+       color: variables.$colorLetraP;
+   }
+   & p{
+       color: variables.$colorLetraS;
+   }
+   .result{
+        margin-bottom: 8%;
+        & p{
+            font-size: 0.8rem;
+            margin: 5px 0 5px;
+        }
+        & h2{
+            font-size: 2.5rem;
+            margin: -10px 0 10px;
+            color: variables.$colorLetraP;
+        }
+        & h5{
+            font-size: 2rem;
+            margin: 10px;
+            color: variables.$colorLetraP;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+
+        & input[type="text"], input[type="submit"], select{
+            width: 100%;
+            margin: 0px 0 25px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-shadow: inset 0 1px 3px #ddd;
+            border-radius: 4px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        & input[type="submit"]{
+            width: 100%;
+            margin: 0 auto;
+            cursor: pointer;
+            background-color: #14d4a5;
+            border: 1px solid #14d4a5;
+            color: variables.$colorLetraP;
+            font-weight: 600;
+            transition: width 1s;
+        }
+
+        & input[type="submit"]:hover{
+            width: 80%;
+        }
+    }
+}
+
+.alert-message {
+    margin: 24px 0 0;
+    color: red!important;
+}

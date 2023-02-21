@@ -1,0 +1,95 @@
+@use 'variables';
+
+footer {
+    background-color: variables.$backgroundDefault;
+    color: variables.$colorLetraP;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    & .copyright {
+        width: 100%;
+        height: 2rem;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        & a {
+            text-decoration: none;
+            color: variables.$colorLetraP;
+            font-size: 0.85rem;
+        }
+    }
+
+    & .links-content {
+        display: grid;
+        justify-content: space-around;
+        width: 100%;
+        margin: 20px auto;
+        grid-template-columns: 1fr 1fr;
+
+        & .contacto-content {
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            .titulo-box{
+                & h3{
+                    color: variables.$colorLetraP;
+                    font-size: 1rem;
+                }
+            }
+            .icons-content{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 10%;
+                & a {
+                    text-decoration: none;
+                    color: variables.$colorLetraP   ;
+                    & i {
+                        font-size: 1rem;
+                    }
+                    & .fa-instagram {
+                        color: #bd266c;
+                    }
+
+                    & .fa-linkedin {
+                        color: #2f77b1;
+                    }
+
+                    & .fa-github {
+                        color: #cccfd4;
+                    }
+
+                    & .fa-whatsapp {
+                        color: #36e954;
+                    }
+                }
+
+            }
+
+        }
+
+        & .proyectos-content {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .titulo-box {
+                & h3{
+                    color: variables.$colorLetraP;
+                    font-size: 1rem;
+                }
+            }
+            .links-box{
+                margin-top: 1%;
+                & a {
+                    text-decoration: none;
+                    & p {
+                        margin-top: 1.5%;
+                        font-size: 0.75rem;
+                        color: variables.$colorLetraS;
+                    }
+                }
+            }
+
+        }
+    }
+}
