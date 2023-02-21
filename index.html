@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Clima Clima-Mañana Clima-Hoy Clima-El-Finde-Semana Clima-El-Finde Buscador-De-Clima">
-    <meta name="description" content="Sitio web donde sabras el clima en todo el mundo!!">
+    <meta name="description" content="En este sitio web puedes saber el clima en cualquier parte del mundo en 2 simples pasos. Primero pones la ciudad, luego el pais de esa ciudad y eso seria todo! ">
+    <!-- Links externos -->
+    <!-- SweetAlert2 -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- Links propios -->
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon"> 
     <link rel="stylesheet" href="css/style.css">
     <title>Buscador de clima</title>
 </head>
@@ -27,15 +31,9 @@
                 <h2>Buscador del clima</h2>
                 <div class="result">
                     <p>Agregue ciudad y pais</p>
-                    <h5>Clima en Argentina</h5>
-        
-                    <h2>23°</h2>
-                    <p>Max: 28°</p>
-                    <p>Min: 20°</p>
                 </div>
                 <form action="" method="POST" class="get-weather">
                     <input type="text" name="city" id="city" placeholder="ingrese su ciudad">
-        
                     <select name="" id="country">
                         <option value="" disabled selected> Selecciona tu pais</option>
                         <option value="AR">Argentina</option>
@@ -46,7 +44,7 @@
                         <option value="MX">México</option>
                         <option value="PE">Perú</option>
                     </select>
-                    <input type="submit" name="" id="" value="Obtener clima">
+                    <input type="submit" name="" id="" value="Obtener el clima">
                 </form>
             </section>
         </main>
@@ -80,7 +78,10 @@
         </footer>
     </div>
     <!-- Scripts de Externos -->
+    <!-- Font Awesome (Iconos) -->
     <script src="https://kit.fontawesome.com/2c1892ead4.js" crossorigin="anonymous"></script>
+    <!-- SweetAlert2 (Alertas "personalizadas") -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Scripts Propios -->
     <script src="js/main.js"></script>
 </body>
